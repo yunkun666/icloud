@@ -1,4 +1,3 @@
-# icloud
 springboot-dubbox
 基于spring-boot dubbox搭建的java分布式系统
 
@@ -20,6 +19,7 @@ MyBatis的多数据源
 接口访问次数限制
 okhttp3第三方接口调用
 德鲁伊sql监控
+
 项目依赖的Mysql，动物园管理员，Redis的
 平台管理员，网站为管理平台接口
 平台的移动客户端为移动客户端接口
