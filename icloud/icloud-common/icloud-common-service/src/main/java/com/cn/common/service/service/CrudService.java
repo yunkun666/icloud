@@ -1,8 +1,8 @@
 package com.cn.common.service.service;
 
+import com.cn.common.entity.DataEntity;
+import com.cn.common.entity.Paging;
 import com.cn.common.service.dao.CrudDao;
-import com.cn.common.utils.entity.DataEntity;
-import com.cn.common.utils.entity.Paging;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;

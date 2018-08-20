@@ -21,16 +21,23 @@
 	<dependencies>
 		<dependency>
             <groupId>com.cn</groupId>
-            <artifactId>icloud-common-utils</artifactId>
+            <artifactId>icloud-common-api</artifactId>
             <version>${project.version}</version>
         </dependency>
-        <dependency>
+
+         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
         </dependency>
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>dubbo</artifactId>
+		<!-- https://mvnrepository.com/artifact/com.alibaba/druid-spring-boot-starter -->
+		<dependency>
+		    <groupId>com.alibaba</groupId>
+		    <artifactId>druid-spring-boot-starter</artifactId>
+		</dependency>
+		
+		<dependency>
+			<groupId>io.dubbo.springboot</groupId>
+			<artifactId>spring-boot-starter-dubbo</artifactId>
             <exclusions>
                 <exclusion>
                     <artifactId>log4j</artifactId>
@@ -45,7 +52,27 @@
                     <groupId>com.google.guava</groupId>
                 </exclusion>
             </exclusions>
-        </dependency>
+		</dependency>
+		
+				
+<!--         <dependency> -->
+<!--             <groupId>com.alibaba</groupId> -->
+<!--             <artifactId>dubbo</artifactId> -->
+<!--             <exclusions> -->
+<!--                 <exclusion> -->
+<!--                     <artifactId>log4j</artifactId> -->
+<!--                     <groupId>log4j</groupId> -->
+<!--                 </exclusion> -->
+<!--                 <exclusion> -->
+<!--                     <artifactId>commons-codec</artifactId> -->
+<!--                     <groupId>commons-codec</groupId> -->
+<!--                 </exclusion> -->
+<!--                 <exclusion> -->
+<!--                     <artifactId>guava</artifactId> -->
+<!--                     <groupId>com.google.guava</groupId> -->
+<!--                 </exclusion> -->
+<!--             </exclusions> -->
+<!--         </dependency> -->
 
         <!-- zookeeper start -->
         <dependency>
@@ -106,20 +133,10 @@
             <groupId>org.mybatis.spring.boot</groupId>
             <artifactId>mybatis-spring-boot-starter</artifactId>
         </dependency>
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>druid-spring-boot-starter</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/org.javassist/javassist -->
+        
 		<dependency>
 		    <groupId>org.javassist</groupId>
 		    <artifactId>javassist</artifactId>
 		</dependency>
-        
 	</dependencies>
 </project>

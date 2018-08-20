@@ -14,7 +14,7 @@ import com.github.pagehelper.PageInfo;
  *
  * @author zhangxd
  */
-public interface ISystemService {
+public interface ISystemService{
 
     /**
      * 根据登录名获取用户
@@ -159,4 +159,10 @@ public interface ISystemService {
      */
     void deleteRoleById(String roleId);
 
+    /**
+     * 測試
+     * @param id
+     * @return
+     */
+    String test(String id);
 }

@@ -2,7 +2,7 @@ spring:
     datasource:
         type: com.alibaba.druid.pool.DruidDataSource
         driverClassName: com.mysql.cj.jdbc.Driver
-        druid: 
+        druid:
             url: jdbc:mysql://192.168.73.131:3306/jrdd?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&useSSL=false
 #            url: jdbc:mysql://192.168.1.121:3306/jrdd?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&useSSL=false
             username: jrdd

@@ -22,8 +22,8 @@
 	</properties>
 	<modules>
 		<module>icloud-common-redis</module>
-		<module>icloud-common-utils</module>
     	<module>icloud-common-service</module>
     	<module>icloud-common-api</module>
+    	<module>icloud-common-base</module>
   </modules>
 </project>

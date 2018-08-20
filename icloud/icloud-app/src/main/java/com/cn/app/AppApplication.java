@@ -1,4 +1,4 @@
-package com.cn.system.provider;
+package com.cn.app;
 
 import org.springframework.boot.Banner;
 import org.springframework.boot.SpringApplication;
@@ -14,11 +14,11 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @ServletComponentScan
 @SpringBootApplication
 @EnableTransactionManagement
-@ImportResource("classpath:dubbo-provider.xml")
-public class SysProviderApplication extends SpringBootServletInitializer {
+@ImportResource("classpath:dubbo-consumer.xml")
+public class AppApplication extends SpringBootServletInitializer {
 
 	public static void main(String[] args) {
-        SpringApplication application = new SpringApplication(SysProviderApplication.class);
+        SpringApplication application = new SpringApplication(AppApplication.class);
         application.setRegisterShutdownHook(false);
         application.setBannerMode(Banner.Mode.CONSOLE);
         application.run(args);
@@ -26,6 +26,6 @@ public class SysProviderApplication extends SpringBootServletInitializer {
 
 	@Override
 	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-		return application.sources(SysProviderApplication.class);
+		return application.sources(AppApplication.class);
 	}
 }

@@ -22,7 +22,6 @@ import java.util.Map;
 
 /**
  * 系统管理，安全相关实体的管理类,包括用户、角色、菜单.
- *
  * @author zhangxd
  */
 @Service
@@ -324,4 +323,10 @@ public class SystemService implements ISystemService {
     public void deleteRoleById(String roleId) {
         sysRoleMapper.deleteById(roleId);
     }
+
+	@Override
+	public String test(String id) {
+		// TODO Auto-generated method stub
+		return "接口返回"+id;
+	}
 }

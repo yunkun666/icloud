@@ -21,8 +21,13 @@
 	<dependencies>
 		<dependency>
             <groupId>com.cn</groupId>
-            <artifactId>icloud-common-utils</artifactId>
+            <artifactId>icloud-common-base</artifactId>
             <version>${project.version}</version>
         </dependency>
+       	<dependency>
+		    <groupId>com.github.pagehelper</groupId>
+		    <artifactId>pagehelper</artifactId>
+		</dependency>
+        
 	</dependencies>
 </project>
