@@ -4,7 +4,6 @@ spring:
         driverClassName: com.mysql.cj.jdbc.Driver
         druid: 
             url: jdbc:mysql://192.168.73.131:3306/jrdd?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&useSSL=false
-#            url: jdbc:mysql://192.168.1.121:3306/jrdd?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&useSSL=false
             username: jrdd
             password: GqGgpIBb1msZItvKDeQwDUn6cLNjNcuL1yIFPpFEVXg/RR/lUS+Xw4rPhk4RpYASJe0XmJXW1GF2qwRXX8xbJg==
             connection-properties: config.decrypt=true;config.decrypt.key=MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBAKUZOiWO4GXUOHP01Z1hs4Fqqlik3h/1RGktriM87AjSIGwNSfSuWcrCPWmCd3/bNWOMBDCtSByS3ViTbsYSxckCAwEAAQ==

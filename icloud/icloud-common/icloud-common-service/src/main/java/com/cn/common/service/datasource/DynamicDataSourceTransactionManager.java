@@ -10,6 +10,7 @@ import javax.sql.DataSource;
  *
  * @author zhangxd
  */
+@SuppressWarnings("serial")
 public class DynamicDataSourceTransactionManager extends DataSourceTransactionManager {
 
     public DynamicDataSourceTransactionManager(DataSource dataSource) {

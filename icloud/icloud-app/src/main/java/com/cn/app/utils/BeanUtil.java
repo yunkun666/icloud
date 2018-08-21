@@ -12,6 +12,7 @@ import org.springframework.beans.BeanUtils;
  */
 public class BeanUtil {
 
+	@SuppressWarnings({ "rawtypes", "unchecked" })
 	public static List copyList(List <? extends Object> poList , Class voClass){
 		List voList = new ArrayList();
         

@@ -10,7 +10,6 @@
     <dubbo:protocol name="dubbo"/>
 
     <!-- 声明需要暴露的服务接口 -->
-    <dubbo:service interface="com.cn.system.api.service.ISystemService"
-                   ref="systemService" protocol="dubbo" timeout="5000"/>
+    <dubbo:service interface="com.cn.system.api.service.ISystemService" ref="systemService" protocol="dubbo" timeout="5000"/>
 
 </beans>

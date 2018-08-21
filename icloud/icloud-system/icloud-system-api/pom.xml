@@ -21,7 +21,7 @@
 	<dependencies>
 		<dependency>
             <groupId>com.cn</groupId>
-            <artifactId>icloud-common-utils</artifactId>
+            <artifactId>icloud-common-api</artifactId>
             <version>${project.version}</version>
         </dependency>
 	</dependencies>

@@ -25,5 +25,6 @@
     	<module>icloud-common-service</module>
     	<module>icloud-common-api</module>
     	<module>icloud-common-base</module>
+    	<module>icloud-common-web</module>
   </modules>
 </project>

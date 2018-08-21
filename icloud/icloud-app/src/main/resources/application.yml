@@ -7,15 +7,19 @@ server:
         max-http-header-size: 3145728
     port: 8081
     context-path: /
-
-spring : 
-    dubbo : 
-        application :   
-            name : consumer
-        registry :  
-            address : zookeeper://192.168.73.134:2181  
+    
+spring: 
+    dubbo: 
+        application:   
+            name: consumer
+            owner: mayunkun
+        registry:  
+            address: zookeeper://192.168.73.134:2181 
+#            client: curator
         scan: com.cn.system.api.service
-        
+        container: logback,spring 
+        logback:
+            level: info
     #解决tomcat同时部署两个SpringBoot应用提示InstanceAlreadyExistsException
     jmx:
         default-domain: app
@@ -24,12 +28,7 @@ spring :
         active: dev
     freemarker:
       request-context-attribute: request
-      
-#    devtools:
-#      restart:
-#        enabled: true
-#        exclude: WEB-INF/**
-
+    
 #logging
 logging:
    config: classpath:logback-spring.xml

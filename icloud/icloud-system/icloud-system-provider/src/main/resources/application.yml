@@ -1,14 +1,36 @@
 spring: 
+#    单机配置
+#    dubbo: 
+#        application:   
+#            name: provider-system
+#        registry: 
+#            address: zookeeper://192.168.73.134:2181
+#            file: 
+#        scan: com.cn.system.provider.service.impl
+
+#    集群配置
     dubbo: 
-        application :   
-            name : provider-system
-        registry :  
-            address : zookeeper://192.168.73.134:2181  
-        scan: com.cn.system.api.service
+        application:   
+            name: provider-system
+            logger: slf4j
+        registry: 
+            protocol: zookeeper
+            address: 192.168.73.134:2181,192.168.73.135:2182,192.168.73.136:2183
+#            client: curator
+            file: /data/zookeeper/system-provider.cache
+        scan: com.cn.system.provider.service.impl
+        logback:
+            level: info
+        monitor: 
+            protocol: registry
+        protocol:
+            dubbo:
+                port: 2000
+        
         
     #解决tomcat同时部署两个SpringBoot应用提示InstanceAlreadyExistsException
     jmx:
-        default-domain: admin
+        default-domain: provider-system
     # 环境 dev|test|prod
     profiles:
         active: dev
@@ -37,11 +59,7 @@ spring:
     freemarker:
       suffix: .html
       request-context-attribute: request
-     
-#    devtools:
-#      restart:
-#        enabled: true
-#        exclude: WEB-INF/**
+      
 icloud:
     redis:
         open: false  # 是否开启redis缓存  true开启   false关闭
