@@ -52,10 +52,10 @@ public class SwaggerConfig {
 
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-            .title("计然豆豆1")
-            .description("jrdd-api文档")
-            .termsOfServiceUrl("http://www.renren.io")
-            .version("3.1.0")
+            .title("icloud")
+            .description("icloud-api文档")
+            .termsOfServiceUrl("http://www.yun-chain.com")
+            .version("2.8.0")
             .build();
     }
 
